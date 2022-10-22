@@ -1422,7 +1422,7 @@ void golRT(){
     printf(" 2. 4-6,99 meter \n");
     printf(" 3. 7-10 meter \n");
     printf(" 4. >10 meter \n");
-    printf(" Masukan lebar jalan Anda: \n");
+    printf(" Masukan lebar jalan Anda: ");
     scanf("%d", &pilih);
     
     switch(pilih){
@@ -1455,7 +1455,7 @@ void golRT(){
         printf(" 1. 0-6,99 meter \n");
         printf(" 2. 7-10 meter \n");
         printf(" 3. >10 meter \n");
-        printf(" Masukan lebar jalan Anda: \n");
+        printf(" Masukan lebar jalan Anda: ");
         scanf("%d", &pilih);
         
         switch(pilih){
