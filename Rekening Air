@@ -7,8 +7,6 @@ void header(){
     printf("           Putu Gede Prayatna 2205551068            \n");
     printf("           Danu Daksawan      2205551062            \n");
     printf(" ================================================== \n");
-    printf("             Tekan Enter Untuk Melanjutkan!         \n");
-    printf(" ================================================== \n");
     scanf("%c", &enter);
     system("cls");
 }
