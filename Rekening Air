@@ -29,7 +29,7 @@ void reValidInt(int *var, char *prompt){
         printf(prompt);
         if(validInt(var))
             break;
-        printf("Input hanya berupa angka!! \n");
+        printf("Input hanya berupa angka! \n");
         printf("\n");
         
     }
