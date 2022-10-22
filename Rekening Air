@@ -1,11 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void header(){
+    char enter;
+    printf(" ================================================== \n");
+    printf("           Putu Gede Prayatna 2205551068            \n");
+    printf("           Danu Daksawan      2205551062            \n");
+    printf(" ================================================== \n");
+    printf("             Tekan Enter Untuk Melanjutkan!         \n");
+    printf(" ================================================== \n");
+    scanf("%c", &enter);
+    system("cls");
+}
+
+
+int validInt(int *var){
+    char buff[1024];
+    char cek;
+    fflush(stdin);
+    if(fgets(buff, sizeof(buff), stdin) != NULL){
+        if(sscanf(buff, "%d %c", var, &cek) == 1) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+void reValidInt(int *var, char *prompt){
+    while(1){
+        printf(prompt);
+        if(validInt(var))
+            break;
+        printf("Input hanya berupa angka!! \n");
+        printf("\n");
+        
+    }
+    
+    }
+
 
 void detailPelanggan(char nama[], char alamat[], int pembayaran, char kelompok[], char golongan[], int tanggalBayar ) {
     
     printf("============================================= \n");
-    printf("       Pembayaran Rekening Air Oktober \n");
+    printf("        Pembayaran Rekening Air Oktober \n");
     printf("============================================= \n");
     printf(" Nama Lengkap = %s \n", nama);
     printf(" Alamat       = %s \n", alamat);
@@ -20,7 +57,7 @@ void detailPelanggan(char nama[], char alamat[], int pembayaran, char kelompok[]
 
 // golongan rumah tangga
 void D11(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -51,11 +88,12 @@ void D11(){
     } else if(pemakaianBulanini-pemakaianBulanlalu>20){
         pembayaran=(pemakaianBulanini-pemakaianBulanlalu)*5820;
     }
+  
     detailPelanggan( nama, alamat, pembayaran, kelompok, golongan, tanggalBayar);
 }
 
 void D12(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -90,7 +128,7 @@ void D12(){
 }
 
 void D13(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -125,7 +163,7 @@ void D13(){
 }
 
 void D14(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -160,7 +198,7 @@ void D14(){
 }
 
 void D21(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -195,7 +233,7 @@ void D21(){
 }
 
 void D22(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -230,7 +268,7 @@ void D22(){
 }
 
 void D23(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -265,7 +303,7 @@ void D23(){
 }
 
 void D24(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -300,7 +338,7 @@ void D24(){
 }
 
 void D31(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -335,7 +373,7 @@ void D31(){
 }
 
 void D32(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -370,7 +408,7 @@ void D32(){
 }
 
 void D33(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -405,7 +443,7 @@ void D33(){
 }
 
 void D34(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -440,7 +478,7 @@ void D34(){
 }
 
 void D41(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -475,7 +513,7 @@ void D41(){
 }
 
 void D42(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -510,7 +548,7 @@ void D42(){
 }
 
 void D43(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -545,7 +583,7 @@ void D43(){
 }
 
 void D44(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -580,7 +618,7 @@ void D44(){
 }
 
 void D51(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -615,7 +653,7 @@ void D51(){
 }
 
 void D52(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -650,7 +688,7 @@ void D52(){
 }
 
 void D53(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -685,7 +723,7 @@ void D53(){
 }
 
 void D54(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Rumah Tangga";
@@ -720,7 +758,7 @@ void D54(){
 }
 
 void E11(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -755,7 +793,7 @@ void E11(){
 }
 
 void E12(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -790,7 +828,7 @@ void E12(){
 }
 
 void E13(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -825,7 +863,7 @@ void E13(){
 }
 
 void E14(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -860,7 +898,7 @@ void E14(){
 }
 
 void E21(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -895,7 +933,7 @@ void E21(){
 }
 
 void E22(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -930,7 +968,7 @@ void E22(){
 }
 
 void E23(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -965,7 +1003,7 @@ void E23(){
 }
 
 void E24(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -1000,7 +1038,7 @@ void E24(){
 }
 
 void E31(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -1035,7 +1073,7 @@ void E31(){
 }
 
 void E32(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -1070,7 +1108,7 @@ void E32(){
 }
 
 void E33(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -1105,7 +1143,7 @@ void E33(){
 }
 
 void E34(){
-    system("clear");
+    system("cls");
     char nama[50], alamat[50];
     int pembayaran, tanggalBayar;
     char kelompok[]="Usaha";
@@ -1140,7 +1178,7 @@ void E34(){
 }
 
 void dayaListrik1(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1174,7 +1212,7 @@ void dayaListrik1(){
 }
 
 void dayaListrik2(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1208,7 +1246,7 @@ void dayaListrik2(){
 }
 
 void dayaListrik3(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1242,7 +1280,7 @@ void dayaListrik3(){
 }
 
 void dayaListrik4(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1276,7 +1314,7 @@ void dayaListrik4(){
 }
 
 void dayaListrik5(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1310,7 +1348,7 @@ void dayaListrik5(){
 }
 
 void dayaListrikE1(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1344,7 +1382,7 @@ void dayaListrikE1(){
 }
 
 void dayaListrikE2(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1378,7 +1416,7 @@ void dayaListrikE2(){
 }
 
 void dayaListrikE3(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1412,7 +1450,7 @@ void dayaListrikE3(){
 }
 
 void golRT(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("=================================== \n");
@@ -1422,8 +1460,7 @@ void golRT(){
     printf(" 2. 4-6,99 meter \n");
     printf(" 3. 7-10 meter \n");
     printf(" 4. >10 meter \n");
-    printf(" Masukan lebar jalan Anda: ");
-    scanf("%d", &pilih);
+    reValidInt(&pilih, " Masukan lebar jalan Anda :");
     
     switch(pilih){
         case 1:
@@ -1446,7 +1483,7 @@ void golRT(){
 }
     
     void golUsaha(){
-        system("clear");
+        system("cls");
         int pilih;
         
         printf("=================================== \n");
@@ -1455,8 +1492,7 @@ void golRT(){
         printf(" 1. 0-6,99 meter \n");
         printf(" 2. 7-10 meter \n");
         printf(" 3. >10 meter \n");
-        printf(" Masukan lebar jalan Anda: ");
-        scanf("%d", &pilih);
+        reValidInt(&pilih," Masukan Lebar jalan Anda: ");
         
         switch(pilih){
             case 1:
@@ -1478,7 +1514,7 @@ void golRT(){
 }
 
 void golongan(){
-    system("clear");
+    system("cls");
     int pilih;
     
     printf("============================================= \n");
@@ -1486,8 +1522,7 @@ void golongan(){
     printf("============================================= \n");
     printf(" 1. Golongan Rumah Tangga \n");
     printf(" 2. Golongan Usaha \n");
-    printf(" Masukan pilihan Anda: ");
-    scanf("%d", &pilih);
+    reValidInt(&pilih, " Masukan pilihan Anda: ");
     
     switch(pilih){
         case 1:
@@ -1504,6 +1539,7 @@ void golongan(){
 }
 
     int main(){
+        header();
         golongan();
         return 0;
     }
