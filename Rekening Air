@@ -5,7 +5,7 @@
 void detailPelanggan(char nama[], char alamat[], int pembayaran, char kelompok[], char golongan[], int tanggalBayar ) {
     
     printf("============================================= \n");
-    printf("           Pembayaran Rekening Air \n");
+    printf("       Pembayaran Rekening Air Oktober \n");
     printf("============================================= \n");
     printf(" Nama Lengkap = %s \n", nama);
     printf(" Alamat       = %s \n", alamat);
